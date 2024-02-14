@@ -19,7 +19,7 @@ function fibonacciSequence(n) {
   return initialSequence;
 }
 
-const result = fibonacciSequence(6); // [0, 1, 1, 2]
+const result = fibonacciSequence(6); // [0, 1, 1, 2, 3, 5]
 
 const complexity = { time: TimeComplexities.LINEAR_LOOP };
 console.log({ result, complexity });

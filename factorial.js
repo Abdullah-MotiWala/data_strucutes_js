@@ -11,6 +11,7 @@ function findFactorial(n) {
   if (!isZeroNumber) {
     for (let i = 2; i <= n; i++) {
       factorial *= i;
+      // 2*3*4*5 : 5
     }
   }
 
@@ -31,6 +32,7 @@ function findFactorial2(n) {
   if (!isZeroNumber) {
     for (let i = n; i > 1; i--) {
       factorial *= i;
+      // 5 : 5*4*3*2
     }
   }
 
