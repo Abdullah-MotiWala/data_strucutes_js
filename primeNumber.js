@@ -42,6 +42,8 @@ console.log({ result2, complexity2 });
 // Method 2
 function isPrimeNumber3(n) {
   let isPrimeNumber = false;
+  // finding sqrt because if number is greater than the sqrt it cannot be prime lets think
+  // e.g 25: sqrt = 5, if something is greater like 6*6 or 6*7 all will be greater than no. so therefor not checking number greater than sqrRoot
   for (let i = 2; i <= Math.sqrt(n); i++) {
     let isDivisible = n % i === 0;
     if (isDivisible) {
