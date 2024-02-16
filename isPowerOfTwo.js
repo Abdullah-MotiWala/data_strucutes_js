@@ -34,7 +34,10 @@ console.log({ result2, complexity2 });
 // Method 2
 function isPowerOfTwo3(n) {
   if (n < 1) return false;
-
+  // using & sign checking for bits
+  // demonstration of followed logic
+  // e.g n = 16
+  // binary value of 16 is 10000, and subtracting any 2 power digits number give almost opposite binary value hence 15 is 00001, now comparing them via bit operator & provide 00000 as binary digits are opposite of each other, condition got true, in case of non power two digits, subtracting 1 does not flip the binary numbers so 0 could be achieved using & operator 
   return (n & (n - 1)) === 0;
 }
 
