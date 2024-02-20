@@ -43,3 +43,13 @@ const result2 = findFactorial2(4);
 const complexity2 = { time: TimeComplexities.LINEAR_LOOP };
 
 console.log("method 2:", { result2, complexity2 });
+
+function findFactorialRecursive3(n) {
+  if (n === 0) return 1;
+  return n * findFactorialRecursive3(--n);
+}
+
+const result3 = findFactorialRecursive3(4);
+const complexity3 = { time: TimeComplexities.LINEAR_LOOP };
+
+console.log("method 3:", { result3, complexity3 });

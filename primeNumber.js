@@ -26,7 +26,7 @@ function isPrimeNumber2(n) {
   let isPrimeNumber = false;
   for (let i = 2; i < n; i++) {
     let isDivisible = n % i === 0;
-    if (isDivisible) {
+    if (!isDivisible) {
       isPrimeNumber = true;
       break;
     }
@@ -46,7 +46,7 @@ function isPrimeNumber3(n) {
   // e.g 25: sqrt = 5, if something is greater like 6*6 or 6*7 all will be greater than no. so therefor not checking number greater than sqrRoot
   for (let i = 2; i <= Math.sqrt(n); i++) {
     let isDivisible = n % i === 0;
-    if (isDivisible) {
+    if (!isDivisible) {
       isPrimeNumber = true;
       break;
     }
